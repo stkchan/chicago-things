@@ -1,0 +1,34 @@
+# Exclude sensitive files
+airflow/credentials/*.json
+api_key.txt
+standalone_admin_password.txt
+airflow-webserver.pid
+
+# Exclude credentials folder
+airflow/credentials/
+
+# Exclude Airflow database and configuration files
+airflow.db
+airflow.cfg
+
+# Exclude Docker configuration overrides (optional)
+docker-compose.override.yml
+dockerfile
+
+# Exclude logs
+logs/
+
+# Exclude Python compiled files
+__pycache__/
+*.pyc
+
+# Exclude IDE or editor settings
+.vscode/
+.idea/
+
+# Exclude temporary or system files
+*.log
+.DS_Store
+Thumbs.db
+
+docker-compose.yml

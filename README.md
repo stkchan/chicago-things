@@ -35,5 +35,25 @@ The project leverages [Apache Airflow](https://airflow.apache.org/) to construct
 
  
 ## Tools and Services Used
+This project leverages a variety of tools and services to create a robust and efficient ETL pipeline:
+ 1. Data Orchestration:
+    - Apache Airflow: Used for scheduling and orchestrating the ETL pipeline. The environment is hosted in [Docker](https://www.docker.com/), ensuring portability and easy management of dependencies.
+ 2. Programming and Data Processing:
+    - [Python](https://www.python.org/): Enables flexibility in building custom ETL tasks and transformations.
+    - [Pandas](https://pandas.pydata.org/): Facilitates efficient data manipulation and transformation.
+    - [PyArrow](https://arrow.apache.org/docs/python/index.html): Converts data into Parquet format for optimized storage and querying.
+ 3. Data Storage and Integration:
+    - Google BigQuery: Hosts the crime dataset and integrates weather data for comprehensive analysis
+    - Google Cloud Storage (GCS): Stores processed data in CSV and Parquet formats for scalability and accessibility.
+    - Amazon S3: Provides additional storage for redundancy and distributed access.
+    - PostgreSQL: Manages structured data in a relational database format.
+ 4. APIs and External Services:
+    - OpenWeather API: Supplies real-time weather data for Chicago.
+    - LINE Notify: Sends notifications about pipeline execution (success or failure). Note: LINE Notify will be discontinued on March 31, 2025.
+    - Slack Webhooks: Provides task status updates directly to Slack channels for seamless communication.
+ 5. Task Monitoring and Notifications:
+    - Notifications via LINE Notify and Slack API ensure visibility into pipeline operations, alerting stakeholders to task statuses, timestamps, and errors.
+ 6. Containerized Environment:
+    - Docker: Ensures consistent deployment of Apache Airflow.
 
  

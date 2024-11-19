@@ -47,13 +47,15 @@ This project leverages a variety of tools and services to create a robust and ef
     - Google Cloud Storage (GCS): Stores processed data in CSV and Parquet formats for scalability and accessibility.
     - Amazon S3: Provides additional storage for redundancy and distributed access.
     - PostgreSQL: Manages structured data in a relational database format.
- 4. APIs and External Services:
+ 4. Data Profile and Quality:
+    - [Dataplex](https://cloud.google.com/dataplex?hl=en): Used to ensure high data quality and maintain a comprehensive data profile. Dataplex automatically generates metadata, schema validation, and profiling reports, enabling users to monitor data consistency and identify anomalies.
+ 5. APIs and External Services:
     - OpenWeather API: Supplies real-time weather data for Chicago.
     - LINE Notify: Sends notifications about pipeline execution (success or failure). Note: LINE Notify will be discontinued on March 31, 2025.
     - Slack Webhooks: Provides task status updates directly to Slack channels for seamless communication.
- 5. Task Monitoring and Notifications:
+ 6. Task Monitoring and Notifications:
     - Notifications via LINE Notify and Slack API ensure visibility into pipeline operations, alerting stakeholders to task statuses, timestamps, and errors.
- 6. Containerized Environment:
+ 7. Containerized Environment:
     - Docker: Ensures consistent deployment of Apache Airflow.
 
  

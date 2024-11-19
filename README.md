@@ -30,6 +30,9 @@ The project leverages [Apache Airflow](https://airflow.apache.org/) to construct
  - Notifications:
       - Success and failure notifications are sent via [LINE Notify API](https://notify-bot.line.me/doc/en/) and [Slack API](https://api.slack.com/tutorials/tracks/actionable-notifications) to ensure smooth operations.
       - Notifications include details like task execution status, timestamps, and error messages (if any), aiding quick issue resolution.
+
+  Noted: The LINE Notify service will be discontinued as of March 31, 2025. [End of service for LINE Notify](https://notify-bot.line.me/closing-announce)
+
  
 ## Tools and Services Used
 

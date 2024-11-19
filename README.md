@@ -25,10 +25,10 @@ The project leverages [Apache Airflow](https://airflow.apache.org/) to construct
       - Local CSV files for archival.
       - [Google Cloud Storage (GCS)](https://cloud.google.com/storage?hl=en) in CSV and Parquet formats.
       - [BigQuery](https://cloud.google.com/bigquery?hl=en) for advanced analysis and integration with crime data.
-      - [Amazon S3]([https://cloud.google.com/bigquery?hl=en](https://aws.amazon.com/pm/serv-s3/)) for distributed storage and redundancy.
+      - [Amazon S3](https://aws.amazon.com/s3/) for distributed storage and redundancy.
       - [PostgreSQL](https://www.postgresql.org/) for relational data storage. 
  - Notifications:
-      - Success and failure notifications are sent via [LINE Notify API]([https://cloud.google.com/bigquery?hl=en](https://notify-bot.line.me/doc/en/)) and [Slack API](https://api.slack.com/tutorials/tracks/actionable-notifications) to ensure smooth operations.
+      - Success and failure notifications are sent via [LINE Notify API](https://notify-bot.line.me/doc/en/) and [Slack API](https://api.slack.com/tutorials/tracks/actionable-notifications) to ensure smooth operations.
       - Notifications include details like task execution status, timestamps, and error messages (if any), aiding quick issue resolution.
  
 ## Tools and Services Used
